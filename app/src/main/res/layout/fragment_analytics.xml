@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/margin_20"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/analytics"/>
+
+    <TextView
+        android:id="@+id/tv_average_age_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SectionTitle"
+        android:layout_marginTop="@dimen/margin_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/average_age"/>
+
+    <TextView
+        android:id="@+id/tv_average_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_average_age_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/margin_4"
+        tools:text="16 years old"/>
+
+    <TextView
+        android:id="@+id/tv_median_age_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SectionTitle"
+        android:layout_marginTop="@dimen/margin_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_average_age"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/median_age"/>
+
+    <TextView
+        android:id="@+id/tv_median_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_median_age_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/margin_4"
+        tools:text="23 years old"/>
+
+    <TextView
+        android:id="@+id/tv_salary_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SectionTitle"
+        android:layout_marginTop="@dimen/margin_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_median_age"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/max_salary"/>
+
+    <TextView
+        android:id="@+id/tv_salary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_salary_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/margin_4"
+        tools:text="20000$"/>
+
+    <TextView
+        android:id="@+id/tv_gender_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/SectionTitle"
+        android:layout_marginTop="@dimen/margin_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_salary"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/male_vs_female"/>
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_gender_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/margin_4"
+        tools:text="34 males vs 25 female"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

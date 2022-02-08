@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_20">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_employee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <EditText
+        android:id="@+id/et_birthday"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="@string/birthday"
+        android:inputType="date"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_name" />
+
+    <EditText
+        android:id="@+id/et_salary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:hint="@string/salary"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        app:layout_constraintEnd_toStartOf="@id/dollar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_birthday" />
+
+    <TextView
+        android:id="@+id/dollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/dollar"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/et_salary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/et_salary"
+        app:layout_constraintTop_toTopOf="@id/et_salary" />
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/gender"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_salary" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cb_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20"
+        android:text="@string/male"
+        app:layout_constraintBottom_toBottomOf="@id/tv_gender"
+        app:layout_constraintStart_toEndOf="@id/tv_gender"
+        app:layout_constraintTop_toTopOf="@id/tv_gender" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/cb_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20"
+        android:text="@string/female"
+        app:layout_constraintBottom_toBottomOf="@id/tv_gender"
+        app:layout_constraintStart_toEndOf="@id/cb_male"
+        app:layout_constraintTop_toTopOf="@id/tv_gender" />
+
+    <Button
+        android:id="@+id/bt_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@drawable/save_button_selector"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_female" />
+
+    <Button
+        android:id="@+id/bt_cancel"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:backgroundTint="@android:color/transparent"
+        android:text="@string/cancel"
+        android:textColor="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="@id/bt_save"
+        app:layout_constraintEnd_toStartOf="@id/bt_save"
+        app:layout_constraintTop_toTopOf="@id/bt_save" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

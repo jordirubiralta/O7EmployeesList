@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Title" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/purple_500</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SectionTitle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/purple_500</item>
+        <item name="android:textSize">@dimen/section_size</item>
+    </style>
+</resources>

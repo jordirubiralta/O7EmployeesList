@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">O7EmployeesList</string>
+    <string name="empty_list">Empty list</string>
+    <string name="employees">Employees</string>
+    <string name="analytics">Analytics</string>
+    <string name="add_employee">Add employee</string>
+    <string name="name">Name</string>
+    <string name="salary">Salary</string>
+    <string name="add_new_employee">Add new Employee</string>
+    <string name="birthday">Birthday</string>
+    <string name="dollar">$</string>
+    <string name="gender">Gender:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="save">SAVE</string>
+    <string name="cancel">CANCEL</string>
+    <string name="form_error_message">Complete all fields to save</string>
+    <string name="salary_text">%s$</string>
+    <string name="average_age">Average age</string>
+    <string name="median_age">Median age</string>
+    <string name="max_salary">Max salary</string>
+    <string name="male_vs_female">Male VS Female</string>
+    <string name="male_female">%1$s male VS %2$s female</string>
+    <string name="years">%s years old</string>
+    <string name="headers">Headers</string>
+</resources>
